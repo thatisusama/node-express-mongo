@@ -34,3 +34,5 @@ app.use(errorhandler);
 app.listen(port, () => {
   console.log(`Listening on port: ${port} with ENV: ${process.env.NODE_ENV}`);
 });
+
+module.exports = app;
