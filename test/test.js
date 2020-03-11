@@ -98,7 +98,7 @@ describe("api/v1/", () => {
     })
 
     it("should return a user", async () => {
-      const req = await request(app).get("/api/v1/users/me").set('Authorization', `Bearer ${token}j`)
+      const req = await request(app).get("/api/v1/users/me").set('Authorization', `Bearer ${token}`)
       expect(req.status).to.equal(200);
       expect(req.body.success).to.equal(true);
     })
